@@ -1,0 +1,7 @@
+ModernStore.Domain/obj/
+ModernStore.Domain/bin/
+ModernStore.Shared/bin/
+packages/
+ModernStore.Shared/obj/
+ModernStore.Domain.Tests/bin/
+ModernStore.Domain.Tests/obj/
