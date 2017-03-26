@@ -4,6 +4,8 @@ namespace ModernStore.Domain.Entidades
 {
     public class Product : Entity
     {
+        protected Product() { }
+
         public Product(string title, decimal price, string image, int quantityOnHand)
         {
             Title = title;

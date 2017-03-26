@@ -1,0 +1,9 @@
+Create view [GetCustomerInfoView] as
+Select
+	c.[Name_FirstName] + ' ' + c.[Name_LastName] as [Name],
+	c.[Document_Number] as [Document],
+	c.[Email_Address] as [Email],
+	u.[Username],
+	u.[Password]
+from
+	[Customer] c inner join [User] u on c.[User_Id] = u.[Id]
