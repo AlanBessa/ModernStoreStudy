@@ -1,4 +1,5 @@
-﻿using ModernStore.Domain.Entidades;
+﻿using ModernStore.Domain.Commands.Results;
+using ModernStore.Domain.Entidades;
 using System;
 
 namespace ModernStore.Domain.Repositories
@@ -7,7 +8,7 @@ namespace ModernStore.Domain.Repositories
     {
         Customer Get(Guid id);
 
-        //GetCustomerCommandResult Get(string username);
+        GetCustomerCommandResult Get(string username);
 
         void Save(Customer customer);
 

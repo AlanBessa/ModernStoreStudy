@@ -4,6 +4,7 @@ Select
 	c.[Document_Number] as [Document],
 	c.[Email_Address] as [Email],
 	u.[Username],
-	u.[Password]
+	u.[Password],
+	u.[Active]
 from
 	[Customer] c inner join [User] u on c.[User_Id] = u.[Id]
