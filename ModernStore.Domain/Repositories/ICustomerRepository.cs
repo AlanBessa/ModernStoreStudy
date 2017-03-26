@@ -7,8 +7,6 @@ namespace ModernStore.Domain.Repositories
     {
         Customer Get(Guid id);
 
-        Customer GetByUserId(Guid id);
-
         //GetCustomerCommandResult Get(string username);
 
         void Save(Customer customer);
