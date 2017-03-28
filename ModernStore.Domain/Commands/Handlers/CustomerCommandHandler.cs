@@ -64,12 +64,11 @@ namespace ModernStore.Domain.Commands.Handlers
             AddNotifications(document.Notifications);
             AddNotifications(user.Notifications);
             AddNotifications(customer.Notifications);
-            
-            if (IsValid())
-            {
-                _customerRepository.Save(customer);
-            }
 
+            if (!IsValid()) return null;
+
+            _customerRepository.Save(customer);
+            
             _emailService.Send(
                 customer.Name.ToString(), 
                 customer.Email.Address, 

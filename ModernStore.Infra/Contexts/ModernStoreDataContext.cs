@@ -7,7 +7,7 @@ namespace ModernStore.Infra.Contexts
 {
     public class ModernStoreDataContext : DbContext
     {
-        public ModernStoreDataContext() : base("Data Source=ALAN-PC;Initial Catalog=ModernStoreData;Integrated Security=True")
+        public ModernStoreDataContext(string connString) : base(connString)
         {
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = false;
