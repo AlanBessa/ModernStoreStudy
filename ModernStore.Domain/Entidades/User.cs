@@ -31,7 +31,7 @@ namespace ModernStore.Domain.Entidades
 
         private string EncryptPassword(string pass)
         {
-            if (String.IsNullOrEmpty(Password)) return "";
+            if (String.IsNullOrEmpty(pass)) return "";
         
             var password = (pass += "|2d331cca-f6c0-40c0-bb43-6e32989c2881");
             var md5 = System.Security.Cryptography.MD5.Create();

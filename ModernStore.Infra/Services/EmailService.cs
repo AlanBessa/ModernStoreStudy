@@ -11,7 +11,7 @@ namespace ModernStore.Infra.Services
     {
         public void Send(string name, string email, string subject, string body)
         {
-            throw new NotImplementedException();
+            //Enviar Email
         }
     }
 }

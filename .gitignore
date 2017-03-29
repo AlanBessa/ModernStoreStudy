@@ -7,3 +7,5 @@ ModernStore.Domain.Tests/bin/
 ModernStore.Domain.Tests/obj/
 ModernStore.Infra/bin/
 ModernStore.Infra/obj/
+ModernStore.Api/obj/
+ModernStore.Api/bin/
