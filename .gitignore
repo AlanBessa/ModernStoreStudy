@@ -9,3 +9,5 @@ ModernStore.Infra/bin/
 ModernStore.Infra/obj/
 ModernStore.Api/obj/
 ModernStore.Api/bin/
+ModernStore.WebApi/bin/
+ModernStore.WebApi/obj/
