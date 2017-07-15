@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using ModernStore.Domain.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ModernStore.Api.Controllers
 {
@@ -15,6 +16,7 @@ namespace ModernStore.Api.Controllers
 
         [HttpGet]
         [Route("v1/products")]
+        [Authorize(Policy = "User")]
         public IActionResult Get()
         {
             return Ok(_productRepository.Get());

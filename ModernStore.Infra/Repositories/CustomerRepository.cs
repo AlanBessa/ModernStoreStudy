@@ -53,7 +53,10 @@ namespace ModernStore.Infra.Repositories
 
         public Customer GetByUsername(string username)
         {
-            throw new NotImplementedException();
+            return _context.Customers
+                           .Include(x => x.User)
+                           .AsNoTracking()
+                           .FirstOrDefault(x => x.User.Username == username);
         }
 
         public void Save(Customer customer)
